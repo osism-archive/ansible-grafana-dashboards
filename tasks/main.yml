@@ -1,3 +1,6 @@
 ---
-- name: grafana datasources
+- name: grafana - datasources
   include: grafana-ds.yml
+
+- name: grafana - dashboards
+  include: grafana-dashboards.yml

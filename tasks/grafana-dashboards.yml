@@ -1,0 +1,10 @@
+---
+- name: grafana - disable getting started panel
+  uri:
+    url: "{{ monitoring_grafana_protocol }}://{{ monitoring_grafana_host }}:{{ monitoring_grafana_port }}/api/user/helpflags/1"
+    method: PUT
+    user: "{{ monitoring_grafana_username }}"
+    password: "{{ monitoring_grafana_password }}"
+    force_basic_auth: yes
+    status_code: 200
+  run_once: true
