@@ -1,0 +1,62 @@
+---
+- name: grafana - check prometheus data source
+  uri:
+    url: "{{ monitoring_grafana_protocol }}://{{ monitoring_grafana_host }}:{{ monitoring_grafana_port }}/api/datasources/name/{{ monitoring_grafana_prometheus_ds_name }}"
+    user: "{{ monitoring_grafana_username }}"
+    password: "{{ monitoring_grafana_password }}"
+    force_basic_auth: yes
+  register: prometheus_ds
+  failed_when: false
+  changed_when: false
+  when: monitoring_grafana_configure_prometheus_ds
+
+- name: grafana - create prometheus data source
+  uri:
+    url: "{{ monitoring_grafana_protocol }}://{{ monitoring_grafana_host }}:{{ monitoring_grafana_port }}/api/datasources"
+    method: POST
+    user: "{{ monitoring_grafana_username }}"
+    password: "{{ monitoring_grafana_password }}"
+    body:
+      name: "{{ monitoring_grafana_prometheus_ds_name }}"
+      type: "prometheus"
+      url: "{{ monitoring_prometheus_protocol }}://{{ monitoring_prometheus_host }}:{{ monitoring_prometheus_port }}"
+      access: "proxy"
+    force_basic_auth: yes
+    status_code: 200
+    body_format: json
+  when:
+    - monitoring_grafana_configure_prometheus_ds
+    - prometheus_ds.status == 404
+
+- name: grafana - check elasticsearch data source
+  uri:
+    url: "{{ monitoring_grafana_protocol }}://{{ monitoring_grafana_host }}:{{ monitoring_grafana_port }}/api/datasources/name/{{ monitoring_grafana_elasticsearch_ds_name }}"
+    user: "{{ monitoring_grafana_username }}"
+    password: "{{ monitoring_grafana_password }}"
+    force_basic_auth: yes
+  register: elasticsearch_ds
+  failed_when: false
+  changed_when: false
+  when: monitoring_grafana_configure_elasticsearch_ds
+
+- name: grafana - create elasticsearch data source
+  uri:
+    url: "{{ monitoring_grafana_protocol }}://{{ monitoring_grafana_host }}:{{ monitoring_grafana_port }}/api/datasources"
+    method: POST
+    user: "{{ monitoring_grafana_username }}"
+    password: "{{ monitoring_grafana_password }}"
+    body:
+      name: "{{ monitoring_grafana_elasticsearch_ds_name }}"
+      type: "elasticsearch"
+      url: "{{ monitoring_elasticsearch_protocol }}://{{ monitoring_prometheus_host }}:{{ monitoring_prometheus_port }}"
+      access: "proxy"
+      database: "flog-*"
+      jsonData:
+        esVersion: 5
+        timeField: "@timestamp"
+    force_basic_auth: yes
+    status_code: 200
+    body_format: json
+  when:
+    - monitoring_grafana_configure_elasticsearch_ds
+    - elasticsearch_ds.status == 404
