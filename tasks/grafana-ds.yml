@@ -8,7 +8,7 @@
   register: prometheus_ds
   failed_when: false
   changed_when: false
-  when: monitoring_grafana_configure_prometheus_ds
+  when: monitoring_grafana_prometheus_ds
 
 - name: grafana - create prometheus data source
   uri:
@@ -25,7 +25,7 @@
     status_code: 200
     body_format: json
   when:
-    - monitoring_grafana_configure_prometheus_ds
+    - monitoring_grafana_prometheus_ds
     - prometheus_ds.status == 404
 
 - name: grafana - check elasticsearch data source
@@ -37,7 +37,7 @@
   register: elasticsearch_ds
   failed_when: false
   changed_when: false
-  when: monitoring_grafana_configure_elasticsearch_ds
+  when: monitoring_grafana_elasticsearch_ds
 
 - name: grafana - create elasticsearch data source
   uri:
@@ -58,5 +58,5 @@
     status_code: 200
     body_format: json
   when:
-    - monitoring_grafana_configure_elasticsearch_ds
+    - monitoring_grafana_elasticsearch_ds
     - elasticsearch_ds.status == 404

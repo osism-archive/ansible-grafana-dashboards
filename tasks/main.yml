@@ -4,3 +4,4 @@
 
 - name: grafana - dashboards
   include: grafana-dashboards.yml
+  when: monitoring_grafana_dashboards

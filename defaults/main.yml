@@ -1,6 +1,7 @@
 ---
-monitoring_grafana_configure_prometheus_ds: true
-monitoring_grafana_configure_elasticsearch_ds: true
+monitoring_grafana_prometheus_ds: true
+monitoring_grafana_elasticsearch_ds: true
+monitoring_grafana_dashboards: true
 
 ##########################
 # elasticsearch
