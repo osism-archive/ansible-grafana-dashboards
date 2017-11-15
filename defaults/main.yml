@@ -9,7 +9,7 @@ monitoring_grafana_dashboards: true
 monitoring_elasticsearch_host: "{{ ansible_default_ipv4.address }}"
 monitoring_elasticsearch_protocol: http
 monitoring_elasticsearch_port: 9200
-monitoring_grafana_elasticsearch_ds_name: elasticsearch
+monitoring_grafana_elasticsearch_ds_name: Elasticsearch
 
 ##########################
 # grafana
