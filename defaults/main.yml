@@ -26,4 +26,4 @@ monitoring_grafana_password: password
 monitoring_prometheus_host: "{{ ansible_default_ipv4.address }}"
 monitoring_prometheus_protocol: http
 monitoring_prometheus_port: 9090
-monitoring_grafana_prometheus_ds_name: prometheus
+monitoring_grafana_prometheus_ds_name: Prometheus
