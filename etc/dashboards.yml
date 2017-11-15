@@ -1,0 +1,46 @@
+---
+# Prometheus
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Prometheus.json
+  dest: pmm-prometheus.json
+
+# MySQL/MariaDB
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/MariaDB.json
+  dest: pmm-mariadb.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/MySQL_Overview.json
+  dest: pmm-mysql-overview.json
+
+# Disk
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Disk_Performance.json
+  dest: pmm-disk-performance.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Disk_Space.json
+  dest: pmm-disk-space.json
+
+# Galera
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/PXC_Galera_Cluster_Overview.json
+  dest: pmm-galera-overview.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/PXC_Galera_Graphs.json
+  dest: pmm-galera-graphs.json
+
+# node-exporter
+
+#- src: https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json
+#  dest: node-exporter-full.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Cross_Server_Graphs.json
+  dest: pmm-system-cross.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/System_Overview.json
+  dest: pmm-system-overview.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Trends_Dashboard.json
+  dest: pmm-system-trends.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Summary_Dashboard.json
+  dest: pmm-system-summary.json
