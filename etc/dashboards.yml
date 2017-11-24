@@ -49,3 +49,6 @@
 
 #- src: https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json
 #  dest: node-exporter-full.json
+
+#- src: https://raw.githubusercontent.com/deadtrickster/prometheus_rabbitmq_exporter/master/priv/dashboards/RabbitMQErlangVM.json
+#  dest: rabbitmq-erlangvm.json
