@@ -30,9 +30,6 @@
 
 # node-exporter
 
-#- src: https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json
-#  dest: node-exporter-full.json
-
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Cross_Server_Graphs.json
   dest: pmm-system-cross.json
 
@@ -44,3 +41,11 @@
 
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Summary_Dashboard.json
   dest: pmm-system-summary.json
+
+# manual imports (because of __inputs)
+
+#- src: https://grafana.com/api/dashboards/266/revisions/4/download
+#  dest: elasticsearch.json
+
+#- src: https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json
+#  dest: node-exporter-full.json
