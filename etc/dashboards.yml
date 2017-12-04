@@ -12,9 +12,6 @@
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/MySQL_InnoDB_Metrics.json
   dest: pmm-mysql-innodb-metrics.json
 
-- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/MySQL_InnoDB_Metrics_Advanced.json
-  dest: pmm-mysql-innodb-metrics-advanced.json
-
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/MySQL_Table_Statistics.json
   dest: pmm-mysql-table-statistics.json
 
