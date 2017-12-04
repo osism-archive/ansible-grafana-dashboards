@@ -25,3 +25,4 @@
   with_fileglob:
     - files/dashboards/*.json
     - "{{ monitoring_custom_dashboards_directory }}/*.json"
+  ignore_errors: true
