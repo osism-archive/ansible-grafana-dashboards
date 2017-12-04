@@ -6,7 +6,7 @@ monitoring_grafana_dashboards: true
 ##########################
 # elasticsearch
 
-monitoring_elasticsearch_host: "{{ ansible_default_ipv4.address }}"
+monitoring_elasticsearch_host: 127.0.0.1
 monitoring_elasticsearch_protocol: http
 monitoring_elasticsearch_port: 9200
 monitoring_grafana_elasticsearch_ds_name: Elasticsearch
@@ -14,7 +14,7 @@ monitoring_grafana_elasticsearch_ds_name: Elasticsearch
 ##########################
 # grafana
 
-monitoring_grafana_host: "{{ ansible_default_ipv4.address }}"
+monitoring_grafana_host: 127.0.0.1
 monitoring_grafana_protocol: http
 monitoring_grafana_port: 3000
 monitoring_grafana_username: admin
@@ -23,7 +23,7 @@ monitoring_grafana_password: password
 ##########################
 # prometheus
 
-monitoring_prometheus_host: "{{ ansible_default_ipv4.address }}"
+monitoring_prometheus_host: 127.0.0.1
 monitoring_prometheus_protocol: http
 monitoring_prometheus_port: 9090
 monitoring_grafana_prometheus_ds_name: Prometheus
