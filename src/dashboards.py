@@ -17,7 +17,7 @@ import os
 import requests
 import yaml
 
-DESTINATION = "files/grafana-dashboards"
+DESTINATION = "files/dashboards"
 
 with open("etc/dashboards.yml") as fp:
     dashboards = yaml.load(fp)
