@@ -4,12 +4,20 @@ monitoring_grafana_elasticsearch_ds: true
 monitoring_grafana_dashboards: true
 
 ##########################
-# elasticsearch
+# elasticsearch datasource
 
 monitoring_elasticsearch_host: 127.0.0.1
 monitoring_elasticsearch_protocol: http
 monitoring_elasticsearch_port: 9200
 monitoring_grafana_elasticsearch_ds_name: Elasticsearch
+
+##########################
+# prometheus datasource
+
+monitoring_prometheus_host: 127.0.0.1
+monitoring_prometheus_protocol: http
+monitoring_prometheus_port: 9090
+monitoring_grafana_prometheus_ds_name: Prometheus
 
 ##########################
 # grafana
@@ -20,10 +28,4 @@ monitoring_grafana_port: 3000
 monitoring_grafana_username: admin
 monitoring_grafana_password: password
 
-##########################
-# prometheus
-
-monitoring_prometheus_host: 127.0.0.1
-monitoring_prometheus_protocol: http
-monitoring_prometheus_port: 9090
-monitoring_grafana_prometheus_ds_name: Prometheus
+monitoring_custom_dashboards_directory: /opt/configuration/environments/monitoring/files/dashboards

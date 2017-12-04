@@ -22,4 +22,6 @@
     status_code: 200
     body_format: json
   run_once: true
-  with_fileglob: files/grafana-dashboards/*.json
+  with_fileglob:
+    - files/dashboards/*.json
+    - "{{ monitoring_custom_dashboards_directory }}/*.json"
