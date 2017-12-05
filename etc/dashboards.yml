@@ -58,3 +58,6 @@
 
 #- src: https://raw.githubusercontent.com/deadtrickster/prometheus_rabbitmq_exporter/master/priv/dashboards/RabbitMQErlangVM.json
 #  dest: rabbitmq-erlangvm.json
+
+#- src: https://raw.githubusercontent.com/bergquist/dashboards/master/prometheus-memcached-exporter/dashboard.json
+#  dest: memcached.json
