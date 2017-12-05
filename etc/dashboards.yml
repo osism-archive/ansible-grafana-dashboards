@@ -61,3 +61,12 @@
 
 #- src: https://raw.githubusercontent.com/bergquist/dashboards/master/prometheus-memcached-exporter/dashboard.json
 #  dest: memcached.json
+
+#- src: https://grafana.com/api/dashboards/364/revisions/3/download
+#  dest: haproxy-backend.json
+
+#- src: https://grafana.com/api/dashboards/361/revisions/3/download
+#  dest: haproxy-frontend.json
+
+#- src: https://grafana.com/api/dashboards/367/revisions/3/download
+#  dest: haproxy-servers.json
