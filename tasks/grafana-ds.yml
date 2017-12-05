@@ -48,7 +48,7 @@
     body:
       name: "{{ monitoring_grafana_elasticsearch_ds_name }}"
       type: "elasticsearch"
-      url: "{{ monitoring_elasticsearch_protocol }}://{{ monitoring_prometheus_host }}:{{ monitoring_prometheus_port }}"
+      url: "{{ monitoring_elasticsearch_protocol }}://{{ monitoring_elasticsearch_host }}:{{ monitoring_elasticsearch_port }}"
       access: "proxy"
       database: "flog-*"
       jsonData:
