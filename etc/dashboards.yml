@@ -76,3 +76,6 @@
 
 #- src: https://grafana.com/api/dashboards/923/revisions/1/download
 #  dest: ceph-do-osd.json
+
+#- src: https://grafana.com/api/dashboards/926/revisions/1/download
+#  dest: ceph-do-pools.json
