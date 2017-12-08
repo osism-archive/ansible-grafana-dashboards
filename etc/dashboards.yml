@@ -70,3 +70,9 @@
 
 #- src: https://grafana.com/api/dashboards/367/revisions/3/download
 #  dest: haproxy-servers.json
+
+#- src: https://grafana.com/api/dashboards/917/revisions/1/download
+#  dest: ceph-do-cluster.json
+
+#- src: https://grafana.com/api/dashboards/923/revisions/1/download
+#  dest: ceph-do-osd.json
