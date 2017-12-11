@@ -19457,7 +19457,7 @@
         "multi": false,
         "name": "node",
         "options": [],
-        "query": "label_values(node_boot_time{job=\"node-exporter\"}, instance)",
+        "query": "label_values(node_boot_time{job=\"node\"}, instance)",
         "refresh": 1,
         "regex": "",
         "sort": 0,

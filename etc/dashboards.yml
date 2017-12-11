@@ -34,7 +34,7 @@
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/PXC_Galera_Graphs.json
   dest: pmm-galera-graphs.json
 
-# node-exporter
+# Node
 
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Cross_Server_Graphs.json
   dest: pmm-system-cross.json
@@ -54,7 +54,7 @@
 #  dest: elasticsearch.json
 
 #- src: https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json
-#  dest: node-exporter-full.json
+#  dest: node-full.json
 
 #- src: https://raw.githubusercontent.com/deadtrickster/prometheus_rabbitmq_exporter/master/priv/dashboards/RabbitMQErlangVM.json
 #  dest: rabbitmq-erlangvm.json
