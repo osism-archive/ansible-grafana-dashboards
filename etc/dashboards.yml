@@ -4,6 +4,12 @@
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Prometheus.json
   dest: pmm-prometheus.json
 
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Prometheus_Exporter_Status.json
+  dest: pmm-prometheus-exporter-status.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Prometheus_Exporters_Overview.json
+  dest: pmm-prometheus-exporter-overview.json
+
 # MySQL/MariaDB
 
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/MySQL_Overview.json
@@ -47,6 +53,9 @@
 
 - src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/Summary_Dashboard.json
   dest: pmm-system-summary.json
+
+- src: https://raw.githubusercontent.com/percona/grafana-dashboards/master/dashboards/CPU_Utilization_Details_Cores.json
+  dest: pmm-cpu-utilization-details-cores.json
 
 # manual imports (because of __inputs)
 
