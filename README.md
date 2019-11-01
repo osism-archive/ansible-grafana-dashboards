@@ -1,3 +1,5 @@
+**This project is no longer maintained.**
+
 # Ansible osism.monitoring
 
 [![Build Status](https://travis-ci.org/osism/ansible-monitoring.svg?branch=master)](https://travis-ci.org/osism/ansible-monitoring)
